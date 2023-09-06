@@ -1,0 +1,82 @@
+main {
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url('../../../assets/header.png');
+    background-position: center;
+    background-repeat: no-repeat;;
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+
+.paragrafo {
+    width: 50%;
+    height: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+-moz-box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+}
+
+input {
+    font-size: 25px;
+    text-align: center;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    outline: 0;
+    color: #dfab21;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    background-color: #dfab21;
+    width: 350px;
+    -webkit-box-shadow: 0px -1px 14px -6px rgba(255,255,255,1);
+    -moz-box-shadow: 0px -1px 14px -6px rgba(255,255,255,1);
+    box-shadow: 0px -1px 14px -6px rgba(255,255,255,1);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+button:hover {
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%, 75% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,83 @@
+main {
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url('../../../assets/header.png');
+    background-position: center;
+    background-repeat: no-repeat;;
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+
+.produtos {
+    width: 50%;
+    height: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+    box-shadow: 0px -1px 14px -6px rgba(0,0,0,1);
+    color: white;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplica a animação aos links */
+  a {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    background-color: #dfab21;
+    width: 400px;
+    -webkit-box-shadow: 0px -1px 14px -6px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px -1px 14px -6px rgba(255, 255, 255, 1);
+    box-shadow: 0px -1px 14px -6px rgba(255, 255, 255, 1);
+    animation: blink 1s infinite; /* Aplica a animação de piscar */
+  }
+  
+  /* Quando o mouse está sobre o link, a animação é desativada */
+  a:hover {
+    animation: none;
+    animation: grow 0.3s;
+  transform: scale(1.1);
+  background-color: rgb(50, 217, 81);;
+  }

@@ -1,0 +1,8 @@
+footer {
+    text-align: center;
+}
+p {
+    border-top: 3px solid white;
+    font-weight: bolder;
+    padding-top: 3px;
+}
