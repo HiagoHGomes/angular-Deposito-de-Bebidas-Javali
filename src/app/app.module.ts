@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { LocalizacaoComponent } from './pages/localizacao/localizacao.component';
 import { SorteioComponent } from './pages/sorteio/sorteio.component';
+import { ContadorComponent } from './components/contador/contador.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { SorteioComponent } from './pages/sorteio/sorteio.component';
     FooterComponent,
     MainComponent,
     LocalizacaoComponent,
-    SorteioComponent
+    SorteioComponent,
+    ContadorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,9 @@
+.contador {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;
+}

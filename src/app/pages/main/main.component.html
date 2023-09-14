@@ -1,11 +1,12 @@
 <main>
     <section>
         <div class="paragrafo">
-            <strong>Sortear <input type="number" value="1"> número</strong><br><br>
-            <strong>entre <input type="number" value="1"> e <input type="number" value="100"></strong><br>
-            <button>Clique aqui para sortear</button>
-            <div></div>
+            <strong>Sortear <input [(ngModel)]="n1" type="number"> {{numero}}</strong><br><br>
+            <strong>entre <input [(ngModel)]="n2" type="number"> e <input [(ngModel)]="n3" type="number"></strong><br>
+            <button (click)="sortear()" [disabled]="sorteioEmAndamento">Clique aqui para sortear</button>
+
+            
         </div>
-        
+        <div class={{className}}>{{numeroSorteado}}</div>
     </section>
 </main>
