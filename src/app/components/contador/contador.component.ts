@@ -11,6 +11,7 @@ export class ContadorComponent implements OnInit {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
+  class: String = "contador";
 
   constructor() { }
 
@@ -29,5 +30,9 @@ export class ContadorComponent implements OnInit {
     this.hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     this.minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     this.seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    if(this.days < 0 && this.hours < 0 && this.minutes <0 && this.seconds < 0){
+      this.class = "none";
+    }
   }
 }
