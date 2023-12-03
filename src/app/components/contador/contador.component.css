@@ -20,12 +20,25 @@
     display: none;
 }
 
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 .sorteioDone {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-weight: bold;
     border-radius: 15px;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     margin-top: 25px;
+    animation: blink 1s infinite;
 }
