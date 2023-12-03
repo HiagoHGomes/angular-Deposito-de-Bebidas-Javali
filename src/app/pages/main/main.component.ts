@@ -29,7 +29,7 @@ export class MainComponent implements DoCheck {
     
     this.className = "noBlink"
 
-    if (this.n1 < 0 || this.n2 < 0 || this.n3 < 0) {
+    if (this.n1 <= 0 || this.n2 <= 0 || this.n3 <= 0) {
       alert("Os valores definidos não podem ser menor ou igual a 0");
     } else {
       this.sorteioEmAndamento = true;
